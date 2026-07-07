@@ -136,6 +136,28 @@ tbody tr:hover td{background:#f8fafc}
   .kpi-val{font-size:1.35rem}
   .header-left h1{font-size:1rem}
 }
+
+/* ═══════════════════════════════════════════════════
+   PRINT / PDF  — fit to page, no side cut-off
+═══════════════════════════════════════════════════ */
+@media print{
+  @page{ size:Letter landscape; margin:0.4in; }
+  html{ font-size:10.5px; background:#fff; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  body{ background:#fff; }
+  *{ -webkit-print-color-adjust:exact !important; print-color-adjust:exact !important; }
+  .header{ position:static !important; box-shadow:none !important; }
+  .header-right{ display:none !important; }            /* filter buttons: not useful on paper */
+  .main{ max-width:100% !important; width:100% !important; margin:0 !important; padding:8px 0 0 !important; }
+  /* charts render at screen pixel width; force them to shrink into the page */
+  .chart-wrap, .chart-wrap.tall{ height:230px !important; }
+  canvas{ max-width:100% !important; height:auto !important; }
+  /* keep logical blocks from splitting across pages */
+  .card, .kpi, .chart-wrap, .section-head, .table-outer, .footer{ break-inside:avoid; page-break-inside:avoid; }
+  .table-outer{ overflow:visible !important; }
+  table{ width:100% !important; font-size:8.5px; }
+  th, td{ white-space:normal !important; padding:4px 6px !important; }
+  .footer{ border-top:1px solid #e2e8f0; }
+}
 </style>
 </head>
 <body>
