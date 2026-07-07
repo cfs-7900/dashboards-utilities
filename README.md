@@ -35,11 +35,11 @@ After each update, `output-data/` will contain:
 
 | File | What It Shows |
 |---|---|
-| `index.html` | **Master dashboard** — all utilities in one view |
-| `electricity.html` | Electricity usage and cost over time |
-| `water.html` | Water consumption and cost over time |
-| `compost.html` | Compost service history |
-| `recycle.html` | Recycling service history |
+| **Master dashboard** — all utilities in one view | [Master Dashboard](https://cfs-7900.github.io/dashboards-utilities/index.html) 
+| Electricity usage and cost over time | [Electricity](https://cfs-7900.github.io/dashboards-utilities/electricity.html) 
+| Water consumption and cost over time | [Water](https://cfs-7900.github.io/dashboards-utilities/index.html) 
+| Compost service history | [Compost](https://cfs-7900.github.io/dashboards-utilities/compost.html) 
+| Recycling service history | [Recycling](https://cfs-7900.github.io/dashboards-utilities/recycle.html) 
 
 Open any file directly in Chrome, Edge, or Safari — no internet or server needed.
 
